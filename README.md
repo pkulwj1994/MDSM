@@ -1,7 +1,18 @@
 # MDSM
 Code for reproducing results in [Multiscale Denoising Score Matching](https://arxiv.org/abs/1910.07762)
 
-# Requirements
+## About MDSM
+MDSM train a neural network Energy-Based Model Efficiently without sampling.
+
+The resulting Energy function can be sampled with Annealed Langevin Dynamics.
+
+Sampling process:
+![sampling process]('imgs/sampling.PNG')
+
+CIFAR and CelebA samples:
+![samples](imgs/samples.PNG)
+
+## Requirements
 Pytorch 
 torchvision
 
