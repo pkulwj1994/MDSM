@@ -1,11 +1,11 @@
 # MDSM
-Code for reproducing results in Multiscale Denoising Score Matching
+Code for reproducing results in [Multiscale Denoising Score Matching](https://arxiv.org/abs/1910.07762)
 
 # Requirements
-Pytorch 1.4.0 (should work on most versions)
-torchvision 0.5.0 (should work on most versions)
+Pytorch 
+torchvision
 
-# Usage
+## Usage
 Train EBM on Fashion MNIST:
 sh exps/fmnist_train.sh
 
@@ -24,7 +24,7 @@ sh exps/cifar_sample_all.sh
 Generate more samples from one network (modify --log argument to folder name and --time argument to time string):
 sh exps/cifar_sample_single.sh
 
-# Pretrained models
+## Pretrained models
 download pretrained cifar model at (need to wrap model with DataParallel to work properly):
 https://drive.google.com/open?id=18uH6UJJjjrdTX8qAf4YMNKFtBmW5o60k 
 unpack to logs folder
@@ -33,5 +33,5 @@ after that, visualize samples from pretrain:
 sh exps/cifar_visualize_pretrain.sh
 
 
-# Other usage
+## Other usage
 Please write you custom script for inpainting experiment using the function Annealed_Langevin_E_mask in functions.sampling
