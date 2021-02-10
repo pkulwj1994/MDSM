@@ -7,7 +7,7 @@ MDSM train a neural network Energy-Based Model Efficiently without sampling.
 The resulting Energy function can be sampled with Annealed Langevin Dynamics.
 
 Sampling process:
-![sampling process]('imgs/sampling.PNG')
+![sampling process](imgs/sampling.PNG)
 
 CIFAR and CelebA samples:
 ![samples](imgs/samples.PNG)
