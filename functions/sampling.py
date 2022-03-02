@@ -85,7 +85,7 @@ def Annealed_Langevin_E(netE,init_x,sigma,T_vect,Sample_every):
         
         if (i+1)%Sample_every==0:
             x_list.append(x.detach().cpu())
-            print('langevin step {}'.format(i+1))
+#             print('langevin step {}'.format(i+1))
         
     netE.train()
     
